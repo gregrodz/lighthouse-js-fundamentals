@@ -1,15 +1,11 @@
-
-for (let repeat = 100; repeat <= 200 ; repeat++) {
-  let number = repeat;
-  if ((number % 3 === 0) && (number % 4 === 0)) {
-    number = "LoopyLighthouse"
+for (let i = 100; i <= 200; i++) {
+  let varToPrint = i;
+  if (i % 3 === 0 && i % 4 === 0) {
+    varToPrint = 'LoopyLighthouse';
+  } else if (i % 3 == 0) {
+    varToPrint = 'Loopy';
+  } else if (i % 4 == 0) {
+    varToPrint = 'Lighthouse';
   }
-  else if (number % 3 == 0) {
-    number = "Loopy"
-  }
-  else if (number % 4 == 0) {
-    number = "Lighthouse"
-  }
-  console.log(number);
+  console.log(varToPrint);
 }
-
